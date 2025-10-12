@@ -1,115 +1,28 @@
-/* Page + typography */
-body {
-  background: #d9f2ec;
-  font-family: "Times New Roman", Times, serif;
-  line-height: 1.35;
-  margin: 40px;
-  color: #000;
-}
-h1 { font-size: 2.2rem; margin: 0 0 .2rem; }
-em.subtitle { display:block; font-size: 1.2rem; margin:0 0 1.2rem; }
-h2 { font-size: 1.3rem; margin: 1.8rem 0 .6rem; color: #002b7f; }
+/* =Base */
+:root{--bg:#d9f2ec;--ink:#000;--link:#0047ab;--rule:#b7d9d2;}
+body{background:var(--bg);color:var(--ink);font-family:"Times New Roman",Times,serif;line-height:1.35;margin:40px;}
+h1{font-size:2.2rem;margin:0 0 .2rem;}
+h2{font-size:1.3rem;margin:1.8rem 0 .6rem;color:#002b7f;}
+a{color:var(--link);text-decoration:none;} a:hover{text-decoration:underline;} /* links */
 
-/* Links */
-a {
-  color: #0047ab;              /* soft academic blue */
-  text-decoration: none;       /* removes underline */
-}
+/* =Header (name + nav) */
+.site-header{text-align:left;margin-bottom:1.2rem;}
+.site-title{font-weight:700;font-size:1.6rem;margin:0;padding:.5rem 0 .2rem 0;} /* name above nav */
+.nav{padding:10px 0;margin:0 0 18px 0;border-bottom:1px solid var(--rule);} /* only bottom rule */
+.nav a{color:#666;text-decoration:none;margin-right:22px;} .nav a:hover{color:var(--link);text-decoration:underline;} .nav .active{color:var(--link);font-weight:700;}
 
-a:hover {
-  text-decoration: underline;  /* underline only on hover */
-}
+/* =Lists */
+ul{list-style:none;padding-left:0;margin:.4rem 0 .8rem 1.2rem;} li{margin-bottom:1rem;} .compact li{margin:.25rem 0;}
 
-/* Site name on the left side of navbar */
-.site-name {
-  font-weight: bold;
-  font-size: 1.05rem;
-  color: #000;
-  margin-right: 2rem;      /* space between name and first link */
-}
+/* =Publications */
+.pub-title{display:block;margin-left:1.5em;font-style:normal;} .pub-title a{font-style:normal;}
+.pub-journal{display:block;margin-left:1.5em;font-style:normal;} .journal{font-style:italic;} /* italics only on journal */
 
-/* Nav bar layout update */
-.nav {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin: 0 0 18px 0;
-  padding: 10px 0;
-  border-bottom: 1px solid #b7d9d2;
-}
+/* =Home: intro + quote */
+.intro{max-width:45ch;margin:.6rem 0 1.2rem;text-align:justify;text-justify:inter-word;}
+.quote{margin-left:1.2rem;font-style:italic;line-height:1.4;}
+.quote .attr{display:block;text-align:right;margin-top:.6rem;margin-right:2.5rem;font-style:normal;} /* author */
+.divider{border:none;border-top:1px solid var(--rule);margin:1.2rem 0;width:50%;}
 
-/* Links keep their existing style */
-.nav a {
-  color: #666;
-  text-decoration: none;
-  margin-right: 22px;
-}
-
-.nav a:hover {
-  text-decoration: underline;
-  color: #0047ab;
-}
-
-.nav .active {
-  color: #0047ab;
-  font-weight: bold;
-}
-
-
-/* Lists */
-ul { margin: .4rem 0 .8rem 1.2rem; list-style: none; padding-left: 0; }
-li { margin-bottom: 1rem; }
-.compact li { margin: .25rem 0; }
-
-/* Publications (Vardges style) */
-.pub-title  {
-  display: block;
-  margin-left: 1.5em;
-  font-style: normal;   /* force titles to non-italic */
-}
-.pub-title a { font-style: normal; }  /* belt-and-suspenders, in case of inheritance */
-.pub-journal {
-  display: block;
-  margin-left: 1.5em;
-  font-style: normal;   /* default normal for the whole line... */
-}
-.journal {
-  font-style: italic;   /* ...only the journal name is italic */
-}
-
-
-/* Home intro + quote */
-.intro { max-width: 65ch; margin: .6rem 0 1.2rem; }
-.quote {
-  margin-left: 1.2rem;
-  font-style: italic;
-  line-height: 1.4;
-}
-
-.quote .attr {
-  display: block;
-  text-align: right;
-  margin-top: 0.6rem;
-  margin-right: 6rem;   /* <-- adjust this to move it closer or farther right */
-  font-style: normal;
-}
-.intro {
-  max-width: 45ch;
-  margin: .6rem 0 1.2rem;
-  text-align: justify;   /* makes this paragraph justified */
-  text-justify: inter-word; /* improves spacing */
-}
-
-.divider {
-  border: none;
-  border-top: 1px solid #b7d9d2;  /* soft mint-gray line */
-  margin: 1.5rem 0;
-  width: 50%;                    /* not full width — visually balanced */
-}
-
-.contact-icon {
-  height: 1em;               /* matches surrounding text height */
-  vertical-align: middle;    /* aligns perfectly with label */
-  image-rendering: crisp-edges;
-  margin-left: 0.3rem;       /* subtle space from label */
-}
+/* =Contact images */
+.contact-icon{height:1em;vertical-align:middle;image-rendering:crisp-edges;margin-left:.3rem;}
