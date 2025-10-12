@@ -78,8 +78,9 @@ li { margin-bottom: 1rem; }
   width: 50%;                    /* not full width — visually balanced */
 }
 
-.contact-img {
-  height: 22px;            /* smaller than before */
-  vertical-align: middle;  /* keeps it lined up with text */
+.contact-icon {
+  height: 1em;               /* matches surrounding text height */
+  vertical-align: middle;    /* aligns perfectly with label */
+  image-rendering: crisp-edges;
+  margin-left: 0.3rem;       /* subtle space from label */
 }
-
