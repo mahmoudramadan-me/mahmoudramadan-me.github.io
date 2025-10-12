@@ -48,3 +48,9 @@ li { margin-bottom: 1rem; }
   text-justify: inter-word; /* improves spacing */
 }
 
+.divider {
+  border: none;
+  border-top: 1px solid #b7d9d2;  /* soft mint-gray line */
+  margin: 1.5rem 0;
+  width: 50%;                    /* not full width — visually balanced */
+}
