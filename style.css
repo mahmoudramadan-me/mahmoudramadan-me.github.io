@@ -4,7 +4,7 @@ body{background:var(--bg);color:var(--ink);font-family:"Times New Roman",Times,s
 
 /* page section headings */
 
-h1{font-size:1.22rem; margin:1rem 0 .5rem; font-weight:650; letter-spacing:0.3px;} 
+h1{font-size:1.25rem; margin:1rem 0 .5rem; font-weight:650; letter-spacing:0.3px;} 
 h2{font-size:1.2rem;margin:1rem 0 .4rem;color:#002b7f;}
 
 a{color:var(--link);text-decoration:none;} a:hover{text-decoration:underline;} /* links */
