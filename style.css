@@ -36,8 +36,9 @@ li { margin-bottom: 1rem; }
 
 .quote .attr {
   display: block;
-  text-align: right;      /* pushes it to the right */
-  margin-top: 0.8rem;     /* adds some space below the last line */
-  font-style: normal;     /* makes the name not italic */
+  text-align: right;
+  margin-top: 0.6rem;
+  margin-right: 6rem;   /* <-- adjust this to move it closer or farther right */
+  font-style: normal;
 }
 
