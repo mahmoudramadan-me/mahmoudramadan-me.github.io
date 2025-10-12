@@ -22,6 +22,11 @@ ul { margin: .4rem 0 .8rem 1.2rem; list-style: none; padding-left: 0; }
 li { margin-bottom: 1rem; }
 .compact li { margin: .25rem 0; }
 
-/* Publication formatting (Vardges style) */
+/* Publications (Vardges style) */
 .pub-title  { display:block; margin-left: 1.5em; }
 .pub-journal{ display:block; margin-left: 1.5em; font-style: italic; }
+
+/* Home intro + quote */
+.intro { max-width: 65ch; margin: .6rem 0 1.2rem; }
+.quote { margin-left: 1.2rem; font-style: italic; }
+.quote .attr { font-style: normal; }
