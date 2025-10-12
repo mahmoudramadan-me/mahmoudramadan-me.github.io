@@ -1,15 +1,20 @@
 /* =Base */
 :root{--bg:#d9f2ec;--ink:#000;--link:#0047ab;--rule:#b7d9d2;}
 body{background:var(--bg);color:var(--ink);font-family:"Times New Roman",Times,serif;line-height:1.35;margin:40px;}
-h1{font-size:2.2rem;margin:0 0 .2rem;}
-h2{font-size:1.3rem;margin:1.8rem 0 .6rem;color:#002b7f;}
+
+/* page section headings */
+h1{font-size:1.6rem;margin:1.2rem 0 .6rem;font-weight:700;}
+h2{font-size:1.2rem;margin:1rem 0 .4rem;color:#002b7f;}
+
 a{color:var(--link);text-decoration:none;} a:hover{text-decoration:underline;} /* links */
 
 /* =Header (name + nav) */
-.site-header{text-align:left;margin-bottom:1.2rem;}
-.site-title{font-weight:700;font-size:1.6rem;margin:0;padding:.5rem 0 .2rem 0;} /* name above nav */
-.nav{padding:10px 0;margin:0 0 18px 0;border-bottom:1px solid var(--rule);} /* only bottom rule */
-.nav a{color:#666;text-decoration:none;margin-right:22px;} .nav a:hover{color:var(--link);text-decoration:underline;} .nav .active{color:var(--link);font-weight:700;}
+.site-header{text-align:left;margin-bottom:1rem;}
+.site-title{font-weight:800;font-size:2.2rem;margin:0;padding:.5rem 0 .3rem 0;color:#000;} /* your name */
+.nav{padding:8px 0;margin:0 0 18px 0;border-bottom:1px solid var(--rule);} /* only bottom rule */
+.nav a{color:#666;text-decoration:none;margin-right:22px;}
+.nav a:hover{color:var(--link);text-decoration:underline;}
+.nav .active{color:var(--link);font-weight:700;}
 
 /* =Lists */
 ul{list-style:none;padding-left:0;margin:.4rem 0 .8rem 1.2rem;} li{margin-bottom:1rem;} .compact li{margin:.25rem 0;}
