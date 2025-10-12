@@ -33,8 +33,21 @@ li { margin-bottom: 1rem; }
 .compact li { margin: .25rem 0; }
 
 /* Publications (Vardges style) */
-.pub-title  { display:block; margin-left: 1.5em; }
-.pub-journal{ display:block; margin-left: 1.5em; font-style: italic; }
+.pub-title  {
+  display: block;
+  margin-left: 1.5em;
+  font-style: normal;   /* force titles to non-italic */
+}
+.pub-title a { font-style: normal; }  /* belt-and-suspenders, in case of inheritance */
+.pub-journal {
+  display: block;
+  margin-left: 1.5em;
+  font-style: normal;   /* default normal for the whole line... */
+}
+.journal {
+  font-style: italic;   /* ...only the journal name is italic */
+}
+
 
 /* Home intro + quote */
 .intro { max-width: 65ch; margin: .6rem 0 1.2rem; }
@@ -63,9 +76,4 @@ li { margin-bottom: 1rem; }
   border-top: 1px solid #b7d9d2;  /* soft mint-gray line */
   margin: 1.5rem 0;
   width: 50%;                    /* not full width — visually balanced */
-}
-
-
-.journal {
-  font-style: italic;    /* only the journal name italicized */
 }
