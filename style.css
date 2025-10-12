@@ -20,12 +20,41 @@ a:hover {
   text-decoration: underline;  /* underline only on hover */
 }
 
+/* Site name on the left side of navbar */
+.site-name {
+  font-weight: bold;
+  font-size: 1.05rem;
+  color: #000;
+  margin-right: 2rem;      /* space between name and first link */
+}
 
-/* Nav */
-.nav { margin: 0 0 18px 0; padding: 10px 0; border-bottom: 1px solid #b7d9d2; }
-.nav a { color: #666; text-decoration: none; margin-right: 22px; }
-.nav a:hover { text-decoration: underline; color: #0047ab; }
-.nav .active { color: #0047ab; font-weight: bold; }
+/* Nav bar layout update */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0 0 18px 0;
+  padding: 10px 0;
+  border-bottom: 1px solid #b7d9d2;
+}
+
+/* Links keep their existing style */
+.nav a {
+  color: #666;
+  text-decoration: none;
+  margin-right: 22px;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+  color: #0047ab;
+}
+
+.nav .active {
+  color: #0047ab;
+  font-weight: bold;
+}
+
 
 /* Lists */
 ul { margin: .4rem 0 .8rem 1.2rem; list-style: none; padding-left: 0; }
