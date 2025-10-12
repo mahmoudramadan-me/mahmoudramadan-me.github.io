@@ -77,3 +77,9 @@ li { margin-bottom: 1rem; }
   margin: 1.5rem 0;
   width: 50%;                    /* not full width — visually balanced */
 }
+
+.contact-img {
+  height: 18px;            /* smaller than before */
+  vertical-align: middle;  /* keeps it lined up with text */
+}
+
