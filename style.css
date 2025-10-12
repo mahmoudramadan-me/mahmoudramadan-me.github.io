@@ -1,0 +1,27 @@
+/* Page + typography */
+body {
+  background: #d9f2ec;
+  font-family: "Times New Roman", Times, serif;
+  line-height: 1.35;
+  margin: 40px;
+  color: #000;
+}
+h1 { font-size: 2.2rem; margin: 0 0 .2rem; }
+em.subtitle { display:block; font-size: 1.2rem; margin:0 0 1.2rem; }
+h2 { font-size: 1.3rem; margin: 1.8rem 0 .6rem; color: #002b7f; }
+a { color: #0047ab; text-decoration: underline; } /* softer blue */
+
+/* Nav */
+.nav { margin: 0 0 18px 0; padding: 10px 0; border-bottom: 1px solid #b7d9d2; }
+.nav a { color: #666; text-decoration: none; margin-right: 22px; }
+.nav a:hover { text-decoration: underline; color: #0047ab; }
+.nav .active { color: #0047ab; font-weight: bold; }
+
+/* Lists */
+ul { margin: .4rem 0 .8rem 1.2rem; list-style: none; padding-left: 0; }
+li { margin-bottom: 1rem; }
+.compact li { margin: .25rem 0; }
+
+/* Publication formatting (Vardges style) */
+.pub-title  { display:block; margin-left: 1.5em; }
+.pub-journal{ display:block; margin-left: 1.5em; font-style: italic; }
