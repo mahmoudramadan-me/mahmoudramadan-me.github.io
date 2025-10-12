@@ -64,3 +64,8 @@ li { margin-bottom: 1rem; }
   margin: 1.5rem 0;
   width: 50%;                    /* not full width — visually balanced */
 }
+
+
+.journal {
+  font-style: italic;    /* only the journal name italicized */
+}
