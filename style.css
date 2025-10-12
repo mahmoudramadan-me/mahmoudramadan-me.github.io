@@ -41,4 +41,10 @@ li { margin-bottom: 1rem; }
   margin-right: 6rem;   /* <-- adjust this to move it closer or farther right */
   font-style: normal;
 }
+.intro {
+  max-width: 65ch;
+  margin: .6rem 0 1.2rem;
+  text-align: justify;   /* makes this paragraph justified */
+  text-justify: inter-word; /* improves spacing */
+}
 
