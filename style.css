@@ -44,14 +44,8 @@ ul{list-style:none;padding-left:0;margin:.4rem 0 .8rem 1.2rem;} li{margin-bottom
 
 /* =CV section layout */ 
 .cv-entry{margin-bottom:1.2rem;} 
-/* .cv-header{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:nowrap;}.cv-role{font-weight:normal;margin-right:.4rem;} 
+.cv-header { display:flex; justify-content:flex-start; align-items:baseline; flex-wrap:nowrap; }
 .cv-role strong{font-weight:bold;color:#000;}
-/* =.cv-dates{font-size:.95rem;color:#333;font-style:normal;min-width:7rem;text-align:right;margin-left:auto;}*/
-/* .cv-dates { min-width: 5.5rem; margin-left: 0.3rem; }
-
-
-.cv-dates { font-size: .95rem; color: #333; font-style: normal; min-width: 4.5rem;   /* reduce width so dates sit closer */ text-align: right; margin-left: 0.2rem; /* small horizontal gap from text */ } 
-.cv-header { display: flex; justify-content: flex-start;  /* remove full space-between */ align-items: baseline; flex-wrap: nowrap; } 
-.cv-dates { margin-left: auto; padding-left: 0.4rem; } /* keeps alignment neat */
-/*= h2{font-size:1.2rem;color:#002b7f;margin-top:1.6rem;margin-bottom:.8rem;}*/
+.cv-dates{font-size:.95rem;color:#333;font-style:normal;min-width:7rem;text-align:right;margin-left:auto;}
+.cv-dates { min-width:4rem; margin-left:0.1rem; }
 
