@@ -34,10 +34,12 @@ ul{list-style:none;padding-left:0;margin:.4rem 0 .8rem 1.2rem;} li{margin-bottom
 .contact-icon{height:1em;vertical-align:middle;image-rendering:crisp-edges;margin-left:.3rem;}
 
 /* =CV section layout */ 
-.cv-entry{margin-bottom:.8rem;} 
-.cv-header{display:flex;justify-content:space-between;flex-wrap:wrap;align-items:baseline;} 
-.cv-role{font-weight:normal;max-width:70%;} 
-.cv-role strong{font-weight:bold;color:#000;} 
-.cv-dates{font-size:.95rem;color:#333;font-style:normal;} 
-h2{font-size:1.2rem;color:#002b7f;margin-top:1.6rem;margin-bottom:.8rem;}
+.cv-entry{margin-bottom:1.2rem;}
+.cv-header{display:flex;justify-content:space-between;flex-wrap:wrap;align-items:baseline;}
+.cv-role{font-weight:normal;max-width:70%;}
+.cv-role strong{font-weight:bold;color:#000;}
+.cv-dates{font-size:.95rem;color:#333;font-style:normal;}
+.cv-bullets{margin:.2rem 0 0 1.6rem;}
+.cv-bullets li{margin:.15rem 0;text-align:justify;}
+/*= h2{font-size:1.2rem;color:#002b7f;margin-top:1.6rem;margin-bottom:.8rem;}*/
 
