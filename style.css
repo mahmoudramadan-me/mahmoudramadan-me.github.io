@@ -20,6 +20,9 @@ a{color:var(--link);text-decoration:none;} a:hover{text-decoration:underline;} /
 /* =Lists */
 ul{list-style:none;padding-left:0;margin:.4rem 0 .8rem 1.2rem;} li{margin-bottom:1rem;} .compact li{margin:.25rem 0;}
 
+.bullets{margin:.25rem 0 0 2.5rem;padding-left:0;list-style:square;}
+.bullets li{margin:.2rem 0;text-align:justify;}
+
 /* =Publications */
 .pub-title{display:block;margin-left:1.5em;font-style:normal;} .pub-title a{font-style:normal;}
 .pub-journal{display:block;margin-left:1.5em;font-style:normal;} .journal{font-style:italic;} /* italics only on journal */
@@ -39,8 +42,7 @@ ul{list-style:none;padding-left:0;margin:.4rem 0 .8rem 1.2rem;} li{margin-bottom
 .cv-role{font-weight:normal;max-width:70%;}
 .cv-role strong{font-weight:bold;color:#000;}
 .cv-dates{font-size:.95rem;color:#333;font-style:normal;}
-.bullets{margin:.25rem 0 0 2.5rem;padding-left:0;list-style:square;}
-.bullets li{margin:.2rem 0;text-align:justify;}
+
 
 /*= h2{font-size:1.2rem;color:#002b7f;margin-top:1.6rem;margin-bottom:.8rem;}*/
 
