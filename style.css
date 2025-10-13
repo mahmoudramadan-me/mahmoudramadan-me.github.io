@@ -44,8 +44,7 @@ ul{list-style:none;padding-left:0;margin:.4rem 0 .8rem 1.2rem;} li{margin-bottom
 
 /* =CV section layout */ 
 .cv-entry{margin-bottom:1.2rem;} 
-.cv-header { display:inline-flex; justify-content:flex-start; align-items:baseline; flex-wrap:nowrap; }
+.cv-header { display:flex; justify-content:space-between; align-items:baseline; flex-wrap:nowrap; }
 .cv-role strong{font-weight:bold;color:#000;}
-.cv-dates{font-size:.95rem;color:#333;font-style:normal;min-width:7rem;text-align:right;margin-left:auto;}
-.cv-dates { min-width:0; margin-left:0; padding-left:0; }
+.cv-dates{font-size:.95rem;color:#333;font-style:normal;min-width:6rem;text-align:right;margin-left:1rem;}
 
