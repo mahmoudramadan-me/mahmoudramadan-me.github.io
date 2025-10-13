@@ -37,11 +37,10 @@ ul{list-style:none;padding-left:0;margin:.4rem 0 .8rem 1.2rem;} li{margin-bottom
 .contact-icon{height:1em;vertical-align:middle;image-rendering:crisp-edges;margin-left:.3rem;}
 
 /* =CV section layout */ 
-.cv-entry{margin-bottom:1.75rem;} /* breathing room between entries */
-.cv-header{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;margin-bottom:.25rem;}
-.cv-role{font-weight:normal;max-width:75%;margin-right:.5rem;} /* role text area */
+.cv-entry{margin-bottom:1.2rem;} 
+.cv-header{display:flex;justify-content:flex-start;align-items:baseline;flex-wrap:wrap;gap:.4rem;} /* keeps name & date close */
+.cv-role{font-weight:normal;margin-right:.4rem;} 
 .cv-role strong{font-weight:bold;color:#000;}
-.cv-dates{font-size:.95rem;color:#333;font-style:normal;margin-left:auto;} /* dates slightly closer */
-
+.cv-dates{font-size:.95rem;color:#333;font-style:normal;} /* tight to name */
 /*= h2{font-size:1.2rem;color:#002b7f;margin-top:1.6rem;margin-bottom:.8rem;}*/
 
