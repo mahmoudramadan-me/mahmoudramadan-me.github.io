@@ -35,6 +35,12 @@ ul{list-style:none;padding-left:0;margin:.4rem 0 .8rem 1.2rem;} li{margin-bottom
 
 /* =Contact images */
 .contact-icon{height:1em;vertical-align:middle;image-rendering:crisp-edges;margin-left:.3rem;}
+.contact-icon {
+  height: 1.1em;     /* slightly larger than the font size */
+  width: auto;       /* keeps proportions */
+  vertical-align: text-bottom;  /* aligns with baseline text */
+  margin-left: 0.25rem;  /* small spacing from label */
+}
 
 /* =CV section layout */ 
 .cv-entry{margin-bottom:1.2rem;} 
