@@ -42,8 +42,46 @@ ul{list-style:none;padding-left:0;margin:.4rem 0 .8rem 1.2rem;} li{margin-bottom
 /*   margin-left: 0.25rem;  /* small spacing from label */
 }
 
-/* =CV section layout */ 
+/* =CV section layout
 .cv-entry{margin-bottom:1.2rem;} 
 .cv-role strong{font-weight:bold;color:#000;}
 .cv-header{display:grid;grid-template-columns:auto max-content;column-gap:.8rem;align-items:baseline;}
-.cv-dates{font-size:.95rem;color:#333;font-style:normal;min-width:0;max-width: 7ch; margin-left:0;text-align:right;}
+.cv-dates{font-size:.95rem;color:#333;font-style:normal;min-width:0;max-width: 7ch; margin-left:0;text-align:right;}  */ 
+
+/* ========== CV section layout ========== */
+.cv-entry {
+  margin-bottom: 1rem;
+}
+
+/* Grid layout: text on the left, date in a fixed-width column */
+.cv-header {
+  display: grid;
+  grid-template-columns: 1fr 9rem; /* 9rem = fixed width for date column */
+  align-items: baseline;
+  column-gap: 0.75rem;
+}
+
+/* Role/Institution area */
+.cv-role {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.cv-role strong {
+  font-weight: bold;
+  color: #000;
+}
+
+/* Right-aligned date column */
+.cv-dates {
+  text-align: right;
+  font-size: 0.95rem;
+  color: #333;
+  font-style: normal;
+  white-space: nowrap;
+}
+
+/* Bullets: indented neatly under role text */
+.bullets {
+  margin: 0.25rem 0 0 1.5rem;
+}
