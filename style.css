@@ -49,33 +49,29 @@ ul{list-style:none;padding-left:0;margin:.4rem 0 .8rem 1.2rem;} li{margin-bottom
 .cv-dates{font-size:.95rem;color:#333;font-style:normal;min-width:0;max-width: 7ch; margin-left:0;text-align:right;}  */ 
 
 /* ========== CV section layout ========== */
-/* Constrain the CV content area */
+/* Content area (so the grid uses this width, not full page) */
 .cv-wrap {
-  max-width: 64rem;          /* ≈ 1024px; adjust to taste */
-  margin-inline: auto;       /* center within the page */
-  padding-inline: 1rem;      /* small side padding */
+  max-width: 64rem;          /* adjust as you like */
+  margin-inline: auto;
+  padding-inline: 1rem;
 }
 
-/* Two-column header: role | dates (fixed right column) */
+/* Two adjacent columns: LEFT text | RIGHT dates  */
 .cv-header {
   display: grid;
-  grid-template-columns: 1fr 9rem;  /* fixed date column inside content area */
-  column-gap: 0.6rem;
+  grid-template-columns: 48rem 8.5rem;  /* ← pick your exact widths */
+  column-gap: 0.5rem;                   /* spacing between text and date */
   align-items: baseline;
 }
 
+.cv-role { line-height: 1.4; }
 .cv-dates {
   text-align: right;
   white-space: nowrap;
-  font-size: 0.95rem;
-  color: #333;
 }
 
-/* bullets line up under the role */
-.bullets { margin: 0.3rem 0 0 1.5rem; }
-
-/* Mobile: stack dates below text for readability */
-@media (max-width: 640px) {
+/* Mobile fallback: stack dates under text */
+@media (max-width: 700px) {
   .cv-header { grid-template-columns: 1fr; }
   .cv-dates  { justify-self: start; text-align: left; margin-top: 0.15rem; }
 }
