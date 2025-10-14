@@ -33,45 +33,17 @@ ul{list-style:none;padding-left:0;margin:.4rem 0 .8rem 1.2rem;} li{margin-bottom
 .quote .attr{display:block;text-align:right;margin-top:.6rem;margin-right:2.5rem;font-style:normal;} /* author */
 .divider{border:none;border-top:1px solid var(--rule);margin:1.2rem 0;width:50%;}
 
+
 /* =Contact images */
 .contact-icon{height:1.5em;vertical-align:text-bottom /*middle*/;image-rendering:crisp-edges;margin-left:.3rem;}
-/* .contact-icon {
-/*   height: 1.1em;     /* slightly larger than the font size */
-/*   width: auto;       /* keeps proportions */
-/*   vertical-align: text-bottom;  /* aligns with baseline text */
-/*   margin-left: 0.25rem;  /* small spacing from label */
-}
 
-/* =CV section layout
-.cv-entry{margin-bottom:1.2rem;} 
-.cv-role strong{font-weight:bold;color:#000;}
-.cv-header{display:grid;grid-template-columns:auto max-content;column-gap:.8rem;align-items:baseline;}
-.cv-dates{font-size:.95rem;color:#333;font-style:normal;min-width:0;max-width: 7ch; margin-left:0;text-align:right;}  */ 
 
 /* ========== CV section layout ========== */
 /* Content area (so the grid uses this width, not full page) */
-.cv-wrap {
-  max-width: 64rem;          /* adjust as you like */
-  margin-inline: auto;
-  padding-inline: 1rem;
-}
-
+.cv-wrap {max-width: 64rem;/* adjust as you like */ margin-inline: auto; padding-inline: 1rem;}
 /* Two adjacent columns: LEFT text | RIGHT dates  */
-.cv-header {
-  display: grid;
-  grid-template-columns: 48rem 8.5rem;  /* ← pick your exact widths */
-  column-gap: 0.5rem;                   /* spacing between text and date */
-  align-items: baseline;
-}
-
-.cv-role { line-height: 1.4; }
-.cv-dates {
-  text-align: right;
-  white-space: nowrap;
-}
-
+.cv-header {display: grid; grid-template-columns: 48rem 8.5rem;  /* ← pick your exact widths */column-gap: 0.5rem;/* spacing between text and date */align-items: baseline;}
+.cv-role { line-height: 1.4;}
+.cv-dates {text-align: right; white-space: nowrap;}
 /* Mobile fallback: stack dates under text */
-@media (max-width: 700px) {
-  .cv-header { grid-template-columns: 1fr; }
-  .cv-dates  { justify-self: start; text-align: left; margin-top: 0.15rem; }
-}
+@media (max-width: 700px) {.cv-header{grid-template-columns: 1fr;} .cv-dates{ justify-self: start; text-align: left; margin-top: 0.15rem; }}
