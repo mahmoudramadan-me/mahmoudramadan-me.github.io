@@ -34,7 +34,7 @@ ul{list-style:none;padding-left:0;margin:.4rem 0 .8rem 1.2rem;} li{margin-bottom
 .divider{border:none;border-top:1px solid var(--rule);margin:1.2rem 0;width:50%;}
 
 /* =Contact images */
-.contact-icon{height:1.25em;vertical-align:middle;image-rendering:crisp-edges;margin-left:.3rem;}
+.contact-icon{height:1.5em;vertical-align:text-bottom /*middle*/;image-rendering:crisp-edges;margin-left:.3rem;}
 /* .contact-icon {
 /*   height: 1.1em;     /* slightly larger than the font size */
 /*   width: auto;       /* keeps proportions */
