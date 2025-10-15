@@ -40,7 +40,10 @@ ul{list-style:none;padding-left:0;margin:.4rem 0 .8rem 1.2rem;} li{margin-bottom
 
 /* ========== CV section layout ========== */
 /* Content area (so the grid uses this width, not full page) */
-.cv-wrap {max-width: 64rem;/* adjust as you like */ margin-inline: auto; padding-inline: 1rem;}
+.cv-wrap {max-width: 64rem;/* adjust as you like */ margin-left: 0;
+margin-right: auto;
+padding-left: 1rem;
+padding-right: 0;}
 /* Two adjacent columns: LEFT text | RIGHT dates  */
 .cv-header {display: grid; grid-template-columns: 48rem 8.5rem;  /* ← pick your exact widths */column-gap: 0.5rem;/* spacing between text and date */align-items: baseline;}
 .cv-role { line-height: 1.4;}
